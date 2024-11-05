@@ -1,0 +1,26 @@
+/*
+Theme Name: MMi nexusarena SAE
+Theme URI: 
+Author: Anis Amrouche
+Author URI: https://nexusarena.aamrouche.fr
+Description: Le thème qui va évaluer si j'ai une bonne note ou pas ( j'espère que oui )
+Version: 0.1
+Tags: Projet, Chaton, MMI,DEV,20/20,pitié, monsieur, 
+*/
+
+
+
+/* Styles de base */
+   /* style.css */
+
+body {
+    background-color: #a70202;
+}
+
+h1 {
+    color: #333;
+}
+
+.test {
+    color: #a70000;
+}
