@@ -504,3 +504,192 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+.team-title{
+    font-family: 'Beaufort'; /* Police Beaufort */
+    font-size: 60px; /* Taille du titre */
+    color: #F0E6D2;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+.team-title{
+    font-family: 'Beaufort'; /* Police Beaufort */
+    font-size: 60px; /* Taille du titre */
+    color: #F0E6D2;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Image de l'équipe */
+.team-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Description de l'équipe */
+.team-description {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Section des membres */
+.team-members-title {
+     font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style de chaque carte de membre */
+.member-item {
+    background-color: #C8AA6E;
+    border: 1px solid #010A13;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%; /* Assurer que le texte ne dépasse pas */
+    overflow: hidden; /* Empêcher le texte de déborder */
+    display: flex;
+    flex-direction: column; /* Pour gérer la disposition verticale du contenu */
+    justify-content: space-between;
+}
+
+.member-item strong {
+    font-weight: bold;
+    font-family: 'Beaufort';
+    font-size: 25px;
+    display: block;
+    margin-bottom: 8px;
+    color: #010A13;
+    white-space: nowrap; /* Empêcher que le nom des membres soit divisé en plusieurs lignes */
+    overflow: hidden; /* Empêcher le texte de dépasser */
+    text-overflow: ellipsis; /* Ajouter des points de suspension si le texte est trop long */
+}
+
+/* Si tu veux limiter la taille du texte des membres (en hauteur) */
+.member-item p {
+    font-size: 16px; /* Ajuster la taille du texte pour éviter le débordement */
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Empêcher les retours à la ligne dans la description des membres */
+}
+
+/* Section des membres */
+.team-members-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.team-members-list {
+    list-style-type: none; /* Retirer les puces */
+    font-size:35px;
+    color: #010A13;
+    font-family: 'beaufort';
+    text-align: center;
+    flex-wrap: wrap; /* Pour afficher les membres en ligne */
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Section des tournois */
+.team-tournaments-title {
+    font-size: 2.2em; /* Augmenter la taille du titre */
+    margin-top: 50px; /* Espacement plus grand */
+    text-align: center;
+    font-weight: bold;
+    color: #F0E6D2; /* Couleur claire pour le titre */
+    text-transform: uppercase; /* Mettre en majuscules */
+}
+
+/* Liste des tournois */
+.team-tournaments-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 800px; /* Augmenter la largeur maximale */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments */
+}
+
+/* Élément de tournoi */
+.tournament-item-list {
+    list-style-type: none; /* Retirer les puces */
+    font-size:35px;
+    color: #010A13;
+    font-family: 'beaufort';
+    text-align: center;
+    flex-wrap: wrap; /* Pour afficher les membres en ligne */
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+.tournament-item {
+    font-size: 40px; /* Taille de la police */
+    margin: 20px 80px;
+    background-color: #F0E6D2; /* Couleur de fond douce */
+    border-radius: 8px;
+    padding: 20px 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol de chaque tournoi */
+.tournament-item:hover {
+    transform: scale(1.05); /* Légère augmentation de taille */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+/* Lien du tournoi */
+.tournament-link {
+    color: #010A13;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+
+/* Responsivité : Adaptation des éléments en mobile */
+@media (max-width: 768px) {
+    .team-tournaments-list {
+        flex-direction: column; /* Alignement vertical des éléments */
+        max-width: 100%;
+    }
+
+    .tournament-item {
+        width: 100%; /* Utilisation de toute la largeur */
+        margin: 10px 0;
+    }
+}

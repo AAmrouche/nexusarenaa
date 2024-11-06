@@ -5,6 +5,9 @@ get_header(); ?>
 <div class="titre-tournois">
     <h1>Équipes</h1>
 
+
+
+
     <?php
     // La boucle pour afficher toutes les équipes
     $args = array(
@@ -50,4 +53,10 @@ get_header(); ?>
 
 </div><!-- .all-teams -->
 
+
+
+
 <?php get_footer(); ?>
+
+
+

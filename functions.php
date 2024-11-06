@@ -10,11 +10,15 @@
 
 
 // Enregistrement du menu
-function register_my_menu() {
-    register_nav_menu('menu-tete', 'Menu de Tête');
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'menu-tete' => 'Menu de Tête', // Menu principal en haut
+            'menu-pied' => 'Menu du Footer' // Menu dans le footer
+        )
+    );
 }
-add_action('after_setup_theme', 'register_my_menu');
-
+add_action('after_setup_theme', 'register_my_menus');
 function hide_admin_bar_for_non_admins() {
     if (!current_user_can('administrator')) {
         add_filter('show_admin_bar', '__return_false');
@@ -31,4 +35,5 @@ function assign_template_to_tournois_page($template) {
     return $template;
 }
 add_filter('template_include', 'assign_template_to_tournois_page');
+
 
