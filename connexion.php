@@ -42,14 +42,17 @@ get_header(); ?>
         <label for="password">Mot de passe</label>
         <input type="password" name="password" required>
 
-        <label for="remember">
-            <input type="checkbox" name="remember"> Se souvenir de moi
-        </label>
+        <!-- Case "Se souvenir de moi" avec un peu plus de style -->
+        <div class="remember-me">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Se souvenir de moi</label>
+        </div>
 
         <input type="submit" name="login_user" value="Se connecter" class="btn btn-primary">
     </form>
 
     <p><a href="<?php echo wp_lostpassword_url(); ?>">Mot de passe oublié ?</a></p>
 </div>
+
 
 <?php get_footer(); ?>

@@ -9,7 +9,9 @@ get_header();
     </div>
 
     <div>
-        <button>Inscrivez-vous</button>
+        <a href="<?php echo home_url('/inscription'); ?>">
+    <button>Inscrivez-vous</button>
+        </a>
     </div>
 
     <div>
@@ -18,7 +20,9 @@ get_header();
     </div>
 
     <div>
-        <button>Créer votre équipe</button>
+        <a href="<?php echo home_url('/iste-des-equipes'); ?>">
+    <button>Créer votre équipe !</button>
+        </a>
     </div>
 </body>
 

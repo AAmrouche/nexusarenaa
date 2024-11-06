@@ -60,8 +60,8 @@
         <?php if (is_user_logged_in()) : ?>
             <a href="<?php echo wp_logout_url(home_url()); ?>">Déconnexion</a>
         <?php else : ?>
-            <a href="/connexion">Connexion</a>
-            <a href="/inscription">Inscription</a>
+             <a href="<?php echo home_url('/connexion'); ?>">Connexion</a>
+            <a href="<?php echo home_url('/inscription'); ?>">Inscription</a>
         <?php endif; ?>
     </div>
 

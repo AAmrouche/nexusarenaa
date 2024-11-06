@@ -45,26 +45,27 @@ get_header(); ?>
 <div class="account-form-container">
     <h2>Créer un Compte</h2>
     <form method="post" action="">
-        <label for="username">Nom d'utilisateur</label>
-        <input type="text" name="username" required>
-        
-        <label for="first_name">Prénom</label>
-        <input type="text" name="first_name" required>
+    <label for="username">Nom d'utilisateur</label>
+    <input type="text" name="username" required>
 
-        <label for="last_name">Nom</label>
-        <input type="text" name="last_name" required>
+    <label for="first_name">Prénom</label>
+    <input type="text" name="first_name" required>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
+    <label for="last_name">Nom</label>
+    <input type="text" name="last_name" required>
 
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" required>
+    <label for="email" class="email">Email</label>
+    <input type="email" name="email" required>
 
-        <label for="confirm_password">Confirmer le mot de passe</label>
-        <input type="password" name="confirm_password" required>
+    <label for="password">Mot de passe</label>
+    <input type="password" name="password" required>
 
-        <input type="submit" name="register_user" value="S'inscrire" class="btn btn-primary">
-    </form>
+    <label for="confirm_password">Confirmer le mot de passe</label>
+    <input type="password" name="confirm_password" required>
+
+    <input type="submit" name="register_user" value="S'inscrire" class="btn btn-primary">
+</form>
+
 </div>
 
 <?php get_footer(); ?>

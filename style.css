@@ -167,7 +167,7 @@ header {
 /* Applique la police Beaufort sur toute la page */
 body {
     font-family: 'Beaufort'; /* Assurez-vous que la police Beaufort est bien chargée dans votre thème */
-    background-color: #0D3B66; /* Bleu de fond, similaire à celui du header */
+    background-color: #091428; /* Bleu de fond, similaire à celui du header */
     color: #FFFFFF; /* Texte blanc comme les liens du menu */
     text-align: center; /* Centre tout le texte */
     margin: 0;
@@ -211,6 +211,118 @@ button {
 
 button:hover {
     background-color: #A5782A; /* Couleur dorée plus foncée au survol */
+}
+
+
+/* Style pour le conteneur du formulaire de connexion */
+.account-form-container {
+    max-width: 800px; /* Largeur maximale doublée pour le conteneur */
+    margin: 100px auto; /* Centrer le conteneur verticalement et horizontalement, espacement doublé */
+    padding: 60px; /* Ajout de padding interne doublé */
+    background-color: #C8AA6E; /* Couleur de fond */
+    border-radius: 16px; /* Coins arrondis doublés */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre plus large pour le conteneur */
+}
+
+/* Style pour le titre du formulaire */
+.account-form-container h2 {
+    color: #0a2c4a; /* Couleur du titre */
+    font-size: 4em; /* Taille du titre doublée */
+    margin-bottom: 40px; /* Espacement en bas doublé */
+    text-align: center; /* Centrer le texte */
+    font-weight: bold; /* Mettre en gras */
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+.account-form-container label {
+    display: block; /* Affichage en bloc pour occuper toute la largeur */
+    margin-bottom: 10px; /* Espacement en bas doublé */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #333; /* Couleur du texte */
+    font-size: 2em; /* Taille de la police doublée */
+}
+
+/* Style pour les champs de saisie */
+.account-form-container input[type="text"],
+.account-form-container input[type="password"] {
+    width: 100%; /* Prendre toute la largeur */
+    padding: 20px; /* Ajout de padding interne doublé */
+    margin-bottom: 30px; /* Espacement en bas doublé */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 8px; /* Coins arrondis doublés */
+    box-sizing: border-box; /* Inclure padding et bordure dans la largeur */
+    font-size: 2em; /* Taille de la police doublée */
+}
+
+/* Style pour le bouton de soumission */
+.account-form-container .btn {
+    background-color: #0D3B66; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    padding: 20px; /* Augmenter le padding interne pour plus de taille */
+    border-radius: 8px; /* Coins arrondis doublés */
+    cursor: pointer; /* Curseur de pointeur */
+    width: 100%; /* Prendre toute la largeur */
+    font-size: 2.4em; /* Taille du texte doublée */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* Style au survol du bouton */
+.account-form-container .btn:hover {
+    background-color: #0a2c4a; /* Couleur de fond au survol */
+}
+
+/* Style pour les messages d'erreur */
+.account-form-container .error {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+    text-align: center; /* Centrer le texte d'erreur */
+    margin-bottom: 30px; /* Espacement en bas doublé */
+}
+
+/* Style pour le texte sous le formulaire (ex: lien vers inscription) */
+.account-form-container p {
+    text-align: center; /* Centrer le texte */
+    margin-top: 30px; /* Espacement en haut doublé */
+    font-size: 2em; /* Taille de la police doublée */
+}
+
+/* Style pour le lien sous le formulaire */
+.account-form-container a {
+    color: #091428; /* Couleur du lien */
+    text-decoration: none; /* Retirer la décoration par défaut */
+    font-weight: bold; /* Mettre en gras */
+    font-size: 1.2em; /* Taille de la police doublée */
+}
+
+.account-form-container a:hover {
+    color: #FAF0CA; /* Changer la couleur au survol */
+    background-color: #091428; /* Ajouter un fond bleu au survol */
+    padding: 10px; /* Espacement doublé pour améliorer l'apparence */
+    border-radius: 8px; /* Coins arrondis doublés */
+}
+.account-form-container .remember-me {
+    font-size: 2em; /* Taille du texte doublée */
+    margin-bottom: 30px; /* Espacement en bas doublé */
+    display: flex; /* Utilisation de flexbox pour aligner l'élément et le texte */
+    align-items: center; /* Centrer verticalement la case à cocher et le texte */
+}
+
+.account-form-container .remember-me input[type="checkbox"] {
+    width: 30px; /* Largeur doublée de la case à cocher */
+    height: 30px; /* Hauteur doublée de la case à cocher */
+    margin-right: 15px; /* Espacement à droite entre la case et le texte */
+}
+
+.account-form-container input[type="text"],
+.account-form-container input[type="email"],
+.account-form-container input[type="password"] {
+    width: 100%; /* Prendre toute la largeur */
+    padding: 15px; /* Ajout de padding interne doublé */
+    margin-bottom: 20px; /* Espacement en bas doublé */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclure padding et bordure dans la largeur */
+    font-size: 2.5em; /* Taille de la police doublée */
 }
 
 
