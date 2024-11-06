@@ -79,9 +79,8 @@ header {
     padding: 0;
 }
 
-/* Photo de profil */
 .profile-picture {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: top-center;
     top: 20px;
@@ -89,9 +88,10 @@ header {
 }
 
 .profile-picture img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    border-radius: 50%; /* Pour garder la forme ronde */
+    width: 200px;  /* Augmenter la taille de la photo */
+    height: 200px; /* Augmenter la taille de la photo */
+    object-fit: cover; /* Pour que l'image couvre bien tout le cercle sans déformation */
 }
 
 /* Croix de fermeture */

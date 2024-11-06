@@ -39,7 +39,7 @@
 <div class="mobile-overlay" id="mobileOverlay">
     <!-- Photo de profil à gauche -->
     <div class="profile-picture">
-        <img src="<?php echo get_template_directory_uri(); ?>/profile.jpg" alt="Photo de profil">
+        <img src="<?php echo get_template_directory_uri(); ?>/profile.png" alt="Photo de profil">
     </div>
 
     <!-- Menu overlay pour mobile -->
