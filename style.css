@@ -693,3 +693,106 @@ button:hover {
         margin: 10px 0;
     }
 }
+
+
+.site-footer {
+    background-color: #091428; /* Fond orange */
+    padding: 20px;
+    font-family: 'Beaufort',;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff; /* Texte blanc */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+.footer-left a {
+    font-family: 'beaufort';
+    font-size: 50px;
+    display: flex;
+    color: #F0E6D2;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+}
+
+.footer-menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-menu-list li {
+    margin: 10px 0;
+    font-size: 50px; /* Agrandissement de la police */
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 90px; /* Agrandissement des icônes */
+    height: 90px;
+    margin: 10px;
+}
+
+.footer-mentions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 90px; /* Agrandissement de la police des mentions légales */
+}
+
+.mentions-legales a {
+    font-family: 'beaufort';
+    font-size: 50px;
+    display: flex;
+    color: #F0E6D2;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+}
+
+.mentions-legales a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-menu-list li {
+        font-size: 1.5rem; /* Police encore plus grande pour mobile */
+    }
+
+    .footer-logo {
+        width: 50px; /* Icônes plus grandes sur mobile */
+        height: 50px;
+    }
+
+    .footer-mentions {
+        font-size: 1.5rem; /* Agrandissement des mentions légales sur mobile */
+    }
+}
