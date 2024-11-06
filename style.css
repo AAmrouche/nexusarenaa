@@ -326,3 +326,83 @@ button:hover {
 }
 
 
+/* Style pour la liste des tournois */
+
+.tournoi-item a {
+    text-decoration: none; /* Supprime le soulignement sur les liens autour de la carte */
+}
+
+.tournois-list {
+    display: flex;                /* Utilisation de Flexbox pour une disposition horizontale */
+    flex-direction: column;       /* Les cartes seront affichées verticalement les unes après les autres */
+    gap: 30px;                    /* Espacement entre les cartes */
+    margin: 20px;                 /* Ajout d'un espacement autour de la liste de cartes */
+}
+
+/* Style pour chaque carte de tournoi */
+.tournoi-item {
+    background-color: #C8AA6E; /* Couleur de fond dorée */
+    border-radius: 20px; /* Bordures arrondies */
+    overflow: hidden; /* Cache tout ce qui dépasse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px); /* Réduit la largeur de la carte pour ne pas toucher les bords (en tenant compte du padding) */
+    max-width: 1200px; /* Limite la taille maximale à 1200px */
+    margin: 0 auto; /* Centrer la carte horizontalement */
+    padding: 20px; /* Ajout d'un espacement à l'intérieur de chaque carte */
+}
+
+/* Style de l'image dans la carte */
+.tournoi-image img {
+    width: 100%;
+    height: 300px; /* Hauteur de l'image */
+    object-fit: cover; /* L'image remplit la largeur et la hauteur de son conteneur */
+}
+
+/* Style des informations du tournoi */
+.tournoi-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Style pour le titre */
+.tournoi-info h3 {
+    font-family: 'Beaufort'; /* Police Beaufort */
+    font-size: 60px; /* Taille du titre */
+    color: #010A13;
+    margin-bottom: 10px;
+    
+}
+
+/* Style pour l'extrait */
+.tournoi-info p {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1em;
+    flex-grow: 1;
+    text-decoration: none; /* Permet à l'extrait d'occuper l'espace restant */
+}
+
+/* Style pour le bouton Voir plus */
+.btn-voir-plus {
+    background-color: #F0E6D2; /* Couleur du bouton */
+    color: #010A13;
+    font-size: 30px;
+    padding: 12px;
+    border-radius: 10px; /* Bordures du bouton arrondies */
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.btn-voir-plus:hover {
+    background-color: #0a2c4a;
+}

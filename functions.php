@@ -15,10 +15,20 @@ function register_my_menu() {
 }
 add_action('after_setup_theme', 'register_my_menu');
 
+function hide_admin_bar_for_non_admins() {
+    if (!current_user_can('administrator')) {
+        add_filter('show_admin_bar', '__return_false');
+    }
+}
+add_action('wp', 'hide_admin_bar_for_non_admins');
 
 
 
-
-
-
+function assign_template_to_tournois_page($template) {
+    if (is_page('tournois')) { // Remplace 'tournois' par l'ID ou le slug de ta page
+        $template = locate_template('template-tournois.php');
+    }
+    return $template;
+}
+add_filter('template_include', 'assign_template_to_tournois_page');
 
