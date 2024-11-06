@@ -5,6 +5,9 @@ Template Name: Tournois
 get_header(); 
 ?>
 
+<div class="titre-tournois">
+    <h1>Tournois</h1>
+</div>
 
 <div class="tournois-list">
     <?php
