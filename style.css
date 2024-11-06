@@ -1,26 +1,216 @@
-/*
-Theme Name: MMi nexusarena SAE
-Theme URI: 
-Author: Anis Amrouche
-Author URI: https://nexusarena.aamrouche.fr
-Description: Le thème qui va évaluer si j'ai une bonne note ou pas ( j'espère que oui )
-Version: 0.1
-Tags: Projet, Chaton, MMI,DEV,20/20,pitié, monsieur, 
-*/
-
-
-
-/* Styles de base */
-   /* style.css */
-
-body {
-    background-color: #a70202;
+@font-face {
+    font-family: 'beaufort';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/BeaufortforLOL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+
+/* Styles de base pour le header */
+header {
+    background-color: #091428; /* Fond bleu pour le header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 120px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 140px;
+}
+
+/* Menu principal pour les grands écrans */
+.main-menu {
+    display: none;
+}
+
+.auth-buttons a {
+    margin-left: 1rem;
     color: #333;
 }
 
-.test {
-    color: #a70000;
+/* Bouton burger */
+.burger-menu {
+    width: 70px; /* Taille du menu burger */
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 }
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #C89B3C;
+    border-radius: 2px;
+}
+
+.mobile-overlay {
+    list-style: none; /* Retirer les puces de la liste */
+    text-decoration: none; /* Enlever les soulignements */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #091428;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'beaufort', sans-serif;
+    font-size: 32px;
+    padding: 0;
+}
+
+/* Photo de profil */
+.profile-picture {
+    display:flex;
+    justify-content: center;
+    align-items: top-center;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+/* Croix de fermeture */
+/* Croix de fermeture */
+.close-btn {
+    font-size: 120px; /* Taille plus grande pour la croix */
+    color: #C8AA6E;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+/* Liste du menu mobile */
+.mobile-menu-list {
+    font-size: 90px;
+    font-family: 'beaufort'; /* Taille de la police */
+    text-decoration: none; /* Enlever le soulignement des liens */
+    color: #F0E6D2; /* Couleur des liens (blanc) */
+    padding: 0; /* Retirer les marges internes de la liste */
+    margin: 0;
+    list-style: none; /* Assurer qu'il n'y a pas de puces sur la liste elle-même */
+}
+
+.mobile-menu-list li {
+    margin-bottom: 25px; /* Augmenter l'espace entre les éléments (espacement vertical) */
+    padding: 10px 0; /* Ajouter de l'espace autour du texte dans chaque élément */
+    text-decoration: none; /* Enlever les soulignements */
+    border-bottom: 3px solid #C89B3C; /* Séparation entre les éléments avec une bordure épaisse */
+    list-style: none; /* Retirer les puces sur les éléments de la liste */
+}
+
+.mobile-menu-list li a {
+    text-decoration: none; /* Retirer le soulignement des liens */
+    color: inherit; /* Assurer que la couleur est héritée du parent */
+}
+
+/* Boutons Connexion/Inscription en bas */
+.auth-buttons-overlay {
+    font-family: 'beaufort';
+    font-size: 70px; /* Taille de la police */
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center; /* Centrer verticalement les éléments */
+    gap: 20px; /* Espacement entre les boutons */
+    justify-content: center; /* Centrer les boutons horizontalement */
+}
+
+/* Style des boutons */
+.auth-buttons-overlay a {
+    font-family: 'beaufort';
+    font-size: 70px; /* Taille de la police */
+    color: #F0E6D2; /* Couleur du texte */
+    text-decoration: none;
+    padding: 10px 20px; /* Espacement interne autour du texte */
+    display: flex;
+    align-items: center; /* Centrer verticalement le texte du bouton */
+}
+
+/* Tiré vertical séparant les boutons */
+.auth-buttons-overlay a:not(:last-child)::after {
+    content: "|"; /* Ajout du tiré vertical */
+    color: #C89B3C; /* Couleur du tiré vertical */
+    margin-left: 20px; /* Espacement avant le tiré */
+    font-size: 70px; /* Taille du tiré vertical */
+    line-height: 0; /* Alignement vertical du tiré */
+    display: inline-block; /* Permet au tiré de se centrer */
+    vertical-align: middle; /* Assure un alignement centré avec les boutons */
+}
+
+/* Applique la police Beaufort sur toute la page */
+body {
+    font-family: 'Beaufort'; /* Assurez-vous que la police Beaufort est bien chargée dans votre thème */
+    background-color: #0D3B66; /* Bleu de fond, similaire à celui du header */
+    color: #FFFFFF; /* Texte blanc comme les liens du menu */
+    text-align: center; /* Centre tout le texte */
+    margin: 0;
+    padding: 0;
+}
+
+/* Mise en page pour les div contenant le texte et les images */
+div {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Centrage du texte */
+p {
+    font-size: 20px; 
+    font-family: 'Actor', sans-serif ; /* Taille de la police du texte */
+    line-height: 1.5;
+    color: #FFFFFF; /* Texte blanc */
+}
+
+/* Style des images */
+img {
+    max-width: 100%; /* Les images s'adaptent à la taille de l'écran */
+    height: auto;
+    margin-top: 20px; /* Espacement entre le texte et l'image */
+}
+
+/* Style des boutons */
+button {
+    font-family: 'Beaufort';
+    font-size: 60px; /* Taille de la police des boutons */
+    background-color: #C89B3C; /* Couleur dorée */
+    color: 010A13;
+    border: none;
+    padding: 30px 75px;
+    border-radius: 12px; /* Coins arrondis */
+    cursor: pointer;
+    margin-top: 20px; /* Espacement entre le texte et le bouton */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A5782A; /* Couleur dorée plus foncée au survol */
+}
+
+
