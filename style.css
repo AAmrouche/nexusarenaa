@@ -796,3 +796,154 @@ button:hover {
         font-size: 1.5rem; /* Agrandissement des mentions légales sur mobile */
     }
 }
+
+
+/* Styles pour la page À propos */
+
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%; /* Conteneur centré avec un peu de marge */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.propos-content {
+    text-align: left; 
+}
+
+
+
+
+/* Styles pour la page de contact */
+.contact-header h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #F0E6D2;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #F0E6D2;
+}
+
+form {
+    display: flex;
+    color: #F0E6D2;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 36px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+button:hover {
+    background-color: #091428;
+}
+
+
+/* Style général pour la page Mentions Légales */
+.mentions-header {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.mentions-header h1 {
+    font-size: 2.5rem;
+    color: #FAF0CA; /* Blanc pour contraster avec le bleu du fond */
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mentions-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #FFF; /* Texte en blanc pour contraster avec le fond bleu */
+    background-color: #091428; /* Bleu foncé pour le fond */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.mentions-content h2 {
+    font-size: 1.8rem;
+    color: #FAF0CA; /* Couleur claire pour les titres */
+    margin-top: 20px;
+}
+
+.mentions-content h3 {
+    font-size: 1.6rem;
+    color: #FAF0CA;
+    margin-top: 15px;
+}
+
+.mentions-content h4 {
+    font-size: 1.4rem;
+    color: #FAF0CA;
+    margin-top: 10px;
+}
+
+.mentions-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.mentions-content a {
+    color: #9CA3DB; /* Bleu clair pour les liens */
+    text-decoration: none;
+}
+
+.mentions-content a:hover {
+    text-decoration: underline;
+}
+
+.mentions-content strong {
+    font-weight: bold;
+}
+
+.mentions-content ul {
+    padding-left: 20px;
+}
+
+.mentions-content ul li {
+    margin-bottom: 5px;
+}
+
+.mentions-content .footer-note {
+    font-size: 1rem;
+    color: #AAA; /* Couleur plus claire pour la note de bas de page */
+    margin-top: 30px;
+}
