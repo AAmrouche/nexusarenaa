@@ -438,3 +438,69 @@ button:hover {
     margin-bottom: 40px;
     text-align: left;
 }
+
+
+/* Style pour les cartes d'équipes */
+.all-teams {
+    padding: 20px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #C8AA6E;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card-image img {
+    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: 200px; /* Taille fixe pour l'image */
+    object-fit: cover; /* Pour garder l'image proportionnelle */
+}
+
+.team-card-title {
+    padding: 15px;
+    text-align: center;
+
+    background-color: #C8AA6E;
+}
+
+.team-card-title h2 {
+   font-family: 'Beaufort'; /* Police Beaufort */
+    font-size: 60px; /* Taille du titre */
+    color: #010A13;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.team-card-footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.see-more-button {
+    background-color: #F0E6D2; /* Couleur du bouton */
+    color: #010A13;
+    font-size: 30px;
+    padding: 12px;
+    border-radius: 10px; /* Bordures du bouton arrondies */
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
